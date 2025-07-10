@@ -1,0 +1,151 @@
+    .container{
+        margin: 0 35%;
+        border: 2px solid black;
+        padding: 10px 20px;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+    .header{
+      display: flex; 
+      justify-content: space-between;
+      align-items: center; 
+      padding: 10px;
+    }
+
+    .MyApp{
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .Note{
+      cursor: pointer;
+      font-size: 30px;
+      opacity: 0.6;
+    }
+
+    .card-all-devices {
+      background: linear-gradient(to right, #7b2ff7, #f107a3);
+      color: white;
+      border-radius: 12px;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      margin-top: 15px;
+    }
+    
+    .card-all-devices .left,
+    .card-all-devices .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card-all-devices .right {
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+      padding-left: 50px;
+    }
+    
+    .card-all-devices .right strong {
+      font-size: 18px;
+    }
+    
+    .card-all-devices .right small {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    
+    .divider {
+      width: 2px;
+      height: 70px;
+      background-color: rgba(255, 255, 255, 0.4);
+      margin-left: 48px;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 4px;
+        grid-gap: 20px;
+        max-height: 600px;      /* Hoặc 100vh, 80vh,... tùy kích thước mong muốn */
+        overflow-y: auto;       /* Tạo thanh cuộn dọc khi nội dung vượt quá */
+        padding-right: 10px;    /* Để tránh nội dung bị che bởi thanh cuộn */
+        height: 360px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 5px;
+      }
+    
+    
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      flex: 30%
+    }
+  
+    .card img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      
+    }
+
+    .card h4 {
+      margin: 5px 0;
+    }
+
+    .card p {
+      color: gray;
+      font-size: 14px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);    /* Phóng to thẻ lên 3% */
+      background-color: #6a1b9a;
+      color: #f8f8f8;
+      transition: 0.4s;
+    }
+
+    .footer{
+      height: 40px;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);  /* đổ lên trên, rõ ràng hơn */
+      margin: -10px -20px;
+      padding: 10px 20px;
+    }
+
+    .footer i {
+      color: rgb(58, 58, 58);
+      padding: 10px;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .footer i:hover,
+    .footer i:active {
+      color: #6a1b9a; /* màu tím khi chạm vào */
+    }
+    
+
+    /* Gắn thêm để fix lỗi co layout khi bọc <a> */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+    
+
+   
+
+
+
+
+    

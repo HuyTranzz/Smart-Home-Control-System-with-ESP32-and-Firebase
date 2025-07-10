@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditioner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="switch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-button">
+            <a href="../video45_2/flex2.html">
+              <i class="fa-solid fa-arrow-left"></i> 
+            </a>
+          </div>
+        <div class="title">Spotlights</div>
+         <i class="fa-solid fa-lightbulb fa-lg"></i>
+
+        <div class="room-card">
+            <div class="card">
+                <i class="fa-solid fa-lamp-floor"></i>            
+            <div class="room-name">
+                Lamp Floor
+            </div>
+
+            </div>
+
+            <div class="card-active">
+               <i class="fa-solid fa-lamp"></i>
+            <div class="room-name">
+                Bed Lamp
+            </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-lamp-desk"></i>
+            <div class="room-name">
+                Lamp Desk
+            </div>
+
+            </div>
+             <div class="card">
+               <i class="fa-solid fa-lamp-street"></i>
+            <div class="room-name">
+                Lamp Garden
+            </div>
+
+            </div>
+        </div>
+
+<div class="control-section">
+    <div class="text">Bed lamp</div>
+    <div class="switch">
+        <input id="sw05"type="checkbox" /></div>
+
+    <img src="../icon/lamp.png">
+
+<div class="section_01">
+  <div class="label">Mode</div>
+  <div class="mode-buttons">
+    <button>Morning</button>
+    <button class="active">Day</button>
+    <button>Night</button>
+  </div>
+  </div>
+<div class="section_02">
+  <div class="label">Intensity</div>
+  <div class="slider-container">
+    <input type="range" min="0" max="100" value="10" class="slider">
+  </div>
+  </div>
+
+  <div class="section_03">
+  <div class="label">Shades</div>
+  <div class="shades">
+    <div class="shade" style="background: red;"></div>
+    <div class="shade" style="background: crimson;"></div>
+    <div class="shade" style="background: deeppink;"></div>
+    <div class="shade" style="background: darkviolet;"></div>
+    <div class="shade" style="background: steelblue;"></div>
+    <div class="shade" style="background: deepskyblue;"></div>
+    <div class="shade selected" style="background: lightgreen;"></div>
+    <div class="shade" style="background: yellow;"></div>
+    <div class="shade" style="background: orange;"></div>
+    <div class="shade" style="background: red;"></div>
+  </div>
+</div>
+</div>
+<div class="footer">
+    <i class="fa-solid fa-house fa-xl"></i>
+    <i class="fa-regular fa-cloud fa-xl"></i>
+    <i class="fa-regular fa-heart fa-xl"></i>
+    <i class="fa-regular fa-bell fa-xl"></i>
+    <i class="fa-regular fa-gear fa-xl"></i>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="control.js"></script>
+</body>
+</html>

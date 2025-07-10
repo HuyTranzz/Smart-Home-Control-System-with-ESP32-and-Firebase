@@ -1,0 +1,54 @@
+.switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .switch input {
+    width: 42px;
+    height: 23px;
+    -webkit-appearance: none;
+    background: #ccc;
+    outline: none;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .switch input:checked {
+    background: #4a148c;
+  }
+
+  .switch input::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .switch input:checked::before {
+    transform: translateX(20px);
+  }
+  .switch input::after{
+    position: absolute;
+    content: "off";
+    right: 4.5px;
+    bottom: 3.5px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .switch input:checked::after{
+    content:"on";
+    right: 23px;
+    bottom: 3.5px;
+  }
+
+  

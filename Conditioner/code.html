@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditioner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="switch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-button">
+            <a href="../video45_2/flex2.html">
+              <i class="fa-solid fa-arrow-left"></i> 
+            </a>
+          </div>
+        <div class="title">Air Conditioner</div>
+        <i class="fa-solid fa-air-conditioner fa-lg"></i>
+        <div class="room-card">
+            <div class="card">
+                <i class="fa-solid fa-sink"></i>
+            <div class="room-name">
+                Bathroom
+            </div>
+            <div class="desc">
+                Device 01
+            </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-couch"></i>
+            <div class="room-name">
+                Livingroom
+            </div>
+            <div class="desc">
+                Device 02
+            </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-fire-burner"></i>
+            <div class="room-name">
+                Kitchen
+            </div>
+            <div class="desc">
+                Device 03
+            </div>
+            </div>
+        </div>
+        <div class="device-status">
+            <div class="header">
+            <strong>Air Conditioning</strong> <br>
+            <small>Present Temperature of Living Room</small>
+            <div class="switch">
+                <input id="sw03"type="checkbox" /></div>
+            </div>
+            <div class="Circle-temp">
+                <svg width="200" height="200">
+                    <circle class="circle-bg" cx="100" cy="100" r="70"/>
+                    <circle class="circle-progress" cx="100" cy="100" r="70"/>
+                  </svg>
+                  <div class="center-text">19°C</div>
+                
+            </div>
+            <p>Quick selection</p>
+            <div class="info-box">
+                <div class="box">
+                    <div class="status">Heating</div>
+                    <div class="temp">30°C</div>
+                </div>
+                <div class="box">
+                    <div class="status">Cooling</div>
+                    <div class="temp">15°C</div>
+                </div>
+                <div class="box">
+                    <div class="status">Airwave</div>
+                    <div class="temp">23°C</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+    <i class="fa-solid fa-house fa-xl"></i>
+    <i class="fa-regular fa-cloud fa-xl"></i>
+    <i class="fa-regular fa-heart fa-xl"></i>
+    <i class="fa-regular fa-bell fa-xl"></i>
+    <i class="fa-regular fa-gear fa-xl"></i>
+  </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="control.js"></script>
+</body>
+</html>

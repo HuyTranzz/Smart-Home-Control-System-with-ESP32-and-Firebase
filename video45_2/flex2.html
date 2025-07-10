@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Home Control</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="switch.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+  <div class="back-button">
+    <a href="../video45_3/flex3.html">
+      <i class="fa-solid fa-arrow-left"></i> 
+    </a>
+  </div>
+  <div class="text">
+    Control Panel
+  </div>
+    </div>
+
+    <div class="info-box">
+      <div class="info-item">
+        <i class="fa-solid fa-temperature-high fa-xl"></i>
+        <div class="info-text">
+          <div class="value"><span id="temp">24</span>°C</div>
+          <div class="label">TEMP</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <i class="fa-regular fa-droplet-degree fa-xl"></i>
+        <div class="info-text">
+          <div class="value"><span id="hum">50</span>%</div>
+          <div class="label">HUMIDITY</div>
+        </div>
+      </div>
+    </div>
+    
+    
+  <div class="grid">
+    <div class="card">
+      <div class="switch">
+        <input id="sw01"type="checkbox" /></div>
+      <i class="fa-solid fa-tv fa-lg"></i>
+      <img id="light_01" src="../icon/red.png">
+      <div class="title">Smart TV</div>
+      <div class="desc">LG 50" UN81 4K</div>
+    </div>
+
+    <div class="card">
+      <div class="switch"><input id="sw02" type="checkbox" /></div>
+      <i class="fa-solid fa-router fa-lg"></i>
+      <img id="light_02" src="../icon/red.png">
+      <div class="title">Router</div>
+      <div class="desc">TP-Link Archer C60 AC</div>
+    </div>
+    <div class="card">
+      <a href="../Conditioner/code.html">
+      <div class="switch"><input id="sw03" type="checkbox" /></div>
+      <i class="fa-solid fa-air-conditioner fa-lg"></i>
+      <img id="light_03"src="../icon/red.png">
+      <div class="title">Air Conditioner</div>
+      <div class="desc">Samsung AR35 A++</div>
+      </a>
+    </div>
+  
+
+    <div class="card">
+      <div class="switch"><input id="sw04" type="checkbox" /></div>
+      <i class="fa-solid fa-speakers fa-lg"></i>
+      <img id="light_04" src="../icon/red.png">
+      <div class="title">Speaker</div>
+      <div class="desc">Samsung Q800T 3.1.2ch</div>
+    </div>
+
+    <div class="card">
+      <a href="../Spotlights/code.html">
+      <div class="switch"><input id="sw05" type="checkbox" /></div>
+      <i class="fa-solid fa-lightbulb fa-lg"></i>
+      <img id="light_05" src="../icon/red.png">
+      <div class="title">Spotlights</div>
+      <div class="desc">Phillips Hue</div>
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="switch"><input id="sw06" type="checkbox" /></div>
+      <i class="fa-solid fa-bell fa-lg"></i>
+      <img id="light_06" src="../icon/red.png">
+      <div class="title">Alarm</div>
+      <div class="desc">Frontpoint Home Alarm</a></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <i class="fa-solid fa-house fa-xl"></i>
+    <i class="fa-regular fa-cloud fa-xl"></i>
+    <i class="fa-regular fa-heart fa-xl"></i>
+    <i class="fa-regular fa-bell fa-xl"></i>
+    <i class="fa-regular fa-gear fa-xl"></i>
+  </div>
+</div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="control.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+    .container{
+      border: 2px solid black;
+      margin: 0 35%;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+    }
+
+    .text{
+      font-weight: bold;
+      font-size: 30px;
+      margin-right: 10px;
+    }
+    
+    .info-box {
+      display: flex;
+      justify-content: space-around;
+      background: linear-gradient(to right, #7b2ff7, #f107a3);
+      padding: 20px;
+      margin-bottom: 20px ;
+      border-radius: 12px;
+      color: white;
+      align-items: center;
+      height: 75px;
+    }
+    
+    .info-item {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      gap:10px;
+    }
+
+
+    .info-item i {
+      font-size: 35px;
+      margin-bottom: 8px;
+    }
+    
+    .info-text .value {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .info-text .label {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    
+    .grid {
+      display: flex;
+      grid-gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom:30px ;
+    }
+
+
+    .card {
+      cursor: pointer;
+      height: 75px;
+      border-radius: 16px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: relative;
+      flex:30%  
+      
+    }
+
+    .card i{
+      margin-top: 10px;
+      font-size: 25px;
+    }
+    .card img{
+      width: 15px;
+      position: absolute;
+      top: 10px;
+      left: 50px;
+    }
+    .card .title {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .card .desc {
+      font-size: 0.9em;
+      color: #888;
+    }
+    .card:hover {
+        background: #6a1b9a;
+        color: white;
+        transform: scale(1.05); 
+        transition: 0.4s;
+      }
+      
+      
+      .card:hover .title {
+        color: white;
+      }
+      
+      .card:hover .desc {
+        color: #e0cfe6;
+      }
+      
+    
+
+.back-button {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.back-button a:hover {
+  color: #6a1b9a;
+}
+
+.footer{
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);  /* đổ lên trên, rõ ràng hơn */
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.footer i {
+  color: rgb(58, 58, 58);
+  padding: 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer i:hover,
+.footer i:active {
+  color: #6a1b9a; /* màu tím khi chạm vào */
+}
+
+/* Gắn thêm để fix lỗi co layout khi bọc <a> */
+a {
+ 
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+   
+
+  
